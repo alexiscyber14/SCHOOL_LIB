@@ -25,5 +25,3 @@ class Person < Nameable
   end
 
 end
-person = Person.new(44 , "maximilainus")
-p person
