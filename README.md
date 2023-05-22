@@ -1,132 +1,83 @@
-# School Library
+# Ruby Challenge: Person, Student, and Teacher Classes
 
+This project demonstrates the implementation of three classes in Ruby: `Person`, `Student`, and `Teacher`. These classes are designed to represent individuals in a school setting and provide various functionalities related to their attributes and permissions.
+
+## Language Used
+
+The project is implemented in Ruby.
 
 ## Getting Started
 
-This repository includes files with plain ruby that can be used to recreate a ruby morse code decorder:
+To get started with this project, follow these steps:
 
-- Use [decorder.rb](./decorder.rb) to decode your morse code.
-<a name="readme-top"></a>
+1. Clone the repository to your local machine.
+2. Make sure you have Ruby installed on your system.
+3. Open the project in your preferred code editor.
 
+## Classes
 
-# 📗 Table of Contents
+### Person
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
-- [📝 License](#license)
+The `Person` class serves as the base class for both students and teachers. It has the following instance variables:
 
-<!-- PROJECT DESCRIPTION -->
+- `@id`: The unique identifier for each person.
+- `@name`: The name of the person (default value: "Unknown").
+- `@age`: The age of the person.
+- `@parent_permission`: A boolean indicating whether the person has parent permission (default value: true).
 
-# 📖 BASICS OF SQL <a name="about-project"></a>
+The `Person` class provides the following functionality:
 
-## 🛠 Built With <a name="built-with"></a>
+- **Constructor**: It initializes the `Person` object with the specified `id`, `age`, `name`, and `parent_permission` (optional) parameters.
+- **Getters**: It provides getter methods to access the `id`, `name`, and `age` instance variables.
+- **Setters**: It provides setter methods to modify the `name` and `age` instance variables.
+- **Private Method of_age?**: This private method returns true if the person's age is greater than or equal to 18, and false otherwise.
+- **Public Method can_use_services?**: This method returns true if the person is of age or if they have permission from their parents.
 
-### Tech Stack <a name="tech-stack"></a>
+### Student
 
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
-  </ul>
-</details>
+The `Student` class inherits from the `Person` class and adds an additional instance variable:
 
-<!-- Features -->
+- `@classroom`: The classroom in which the student is enrolled.
 
-### Key Features <a name="key-features"></a>
+The `Student` class provides the following additional functionality:
 
-- **Decode any morse code message from charcters to numbers**
+- **Constructor**: It extends the parent class's constructor by including an additional parameter to specify the `classroom`.
+- **Method play_hooky**: This method returns the string "¯\\(ツ)/¯", indicating that the student is playing hooky.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### Teacher
+
+The `Teacher` class also inherits from the `Person` class and adds an additional instance variable:
+
+- `@specialization`: The area of specialization for the teacher.
+
+The `Teacher` class provides the following additional functionality:
+
+- **Constructor**: It extends the parent class's constructor by including an additional parameter to specify the `specialization`.
+- **Override can_use_services?**: This method overrides the parent class's `can_use_services?` method and always returns true, indicating that the teacher can use all services.
 
 
-## 💻 Getting Started <a name="getting-started"></a>
+## Future Features
 
-To get a local copy up and running, follow these steps.
+Here are some potential future features that can be added to enhance the functionality of the classes:
 
-### Prerequisites
+- **Additional Attributes**: Expand the `Person` class with more attributes such as address, phone number, or email.
+- **Methods for Student**: Implement methods in the `Student` class for submitting assignments, tracking grades, or joining extracurricular activities.
+- **Methods for Teacher**: Add methods to the `Teacher` class for assigning grades, managing class schedules, or generating reports.
+- **Parent Class**: Introduce a parent class to handle common attributes and behaviors shared between students and teachers.
+- **Database Integration**: Develop database integration to store and retrieve student and teacher information.
+- **User Interface**: Create a user interface to interact with the classes, allowing users to input data and view results.
+- **Serialization**: Implement serialization capabilities to save and load instances of the classes.
 
-In order to run this project you need:
-- **Install Ruby on your local machine**
+## Author
 
-### Usage
-
-To make use of this project, just clone it and execute the decorder.rb file in your terminal.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- AUTHORS -->
-
-## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
-
-👤 **Author1**
-
-- GitHub: [@alexiscyber14](https://github.com/alexiscyber14)
-- Instagram:[@Alexiscyber14](https://www.instagram.com/alexiscyber14/)
-- LinkedIn:[@Alex_Ssenyoondo](https://www.linkedin.com/in/alex-software/)
-
-
-👤 **Author2**
-
-- GitHub: [@Reem](https://github.com/ReemMohamedAbdelfatah/)
-- LinkedIn:[@Reem](https://reemmohamedabdelfatah.github.io/Portfolio-Reem/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FUTURE FEATURES -->
-
-## 🔭 Future Features <a name="future-features"></a>
-
-- [ ] **Dtabase table creation and table relationship modeling**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
-
-## 🤝 Contributing <a name="contributing"></a>
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- SUPPORT -->
-
-## ⭐️ Show your support <a name="support"></a>
-
-If you like this project give it a star
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-I would like to thank <a href="https://www.microverse.org/">MICROVERSE FOR THEIR HELP ON THIS PROJECT</a>
+This project was created by [Alexander Ssenyondo].
+- *<a href="https://www.linkedin.com/in/alex-software/">linkedin</a>
 <br>
-I would like to thank <a href="https://github.com/ReemMohamedAbdelfatah/">Reem Mohamed</a>
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- *<a href="https://www.instagram.com/alexiscyber14/">instagram</a>
+<br>
+- *<a href="https://github.com/alexiscyber14">github</a>
+<br>
+- *<a href="https://angel.co/u/alexander-senyondo">wellfound</a>
+## License
 
-<!-- LICENSE -->
-## 📝 License <a name="license"></a>
-<p>This project is <a href="/LICENSE.md">MIT</a> licensed</p>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+This project is licensed under the [MIT License](LICENSE).
