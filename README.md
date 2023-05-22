@@ -71,13 +71,12 @@ Here are some potential future features that can be added to enhance the functio
 ## Author
 
 This project was created by [Alexander Ssenyondo].
-- *<a href="https://www.linkedin.com/in/alex-software/">linkedin</a>
-<br>
-- *<a href="https://www.instagram.com/alexiscyber14/">instagram</a>
-<br>
-- *<a href="https://github.com/alexiscyber14">github</a>
-<br>
-- *<a href="https://angel.co/u/alexander-senyondo">wellfound</a>
+
+- GitHub: [@alexiscyber14](https://github.com/alexiscyber14)
+- Instagram:[@Alexiscyber14](https://www.instagram.com/alexiscyber14/)
+- LinkedIn:[@Alex_Ssenyoondo](https://www.linkedin.com/in/alex-software/)
+- wellfound:[@alexiscyber14](https://angel.co/u/alexander-senyondo)
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
