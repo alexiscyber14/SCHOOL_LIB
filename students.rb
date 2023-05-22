@@ -1,4 +1,5 @@
 require './person'
+require './classroom.rn'
 
 class Student < Person
   def initialize(age, classroom, name = 'unknow', parent_permission: true)
