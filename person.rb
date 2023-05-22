@@ -5,8 +5,9 @@ class Person < Nameable
 
   def initialize(age, name = 'Unknown', parent_permission: true)
     @id = Random.rand(1...1000)
+    super()
+    @name = name
     @age = age
-    super(name)
     @parent_permission = parent_permission
   end
 
@@ -24,3 +25,7 @@ class Person < Nameable
     @age >= 18
   end
 end
+
+person = Person.new(44, 'green')
+
+p person
