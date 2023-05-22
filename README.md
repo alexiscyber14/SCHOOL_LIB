@@ -1,18 +1,58 @@
-# Ruby Challenge: Person, Student, and Teacher Classes
+<div align="center">
+  <h3><b>School library</b></h3>
+</div>
 
-This project demonstrates the implementation of three classes in Ruby: `Person`, `Student`, and `Teacher`. These classes are designed to represent individuals in a school setting and provide various functionalities related to their attributes and permissions.
+# 📗 Table of Contents
 
-## Language Used
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ (OPTIONAL)](#faq)
+- [📝 License](#license)
 
-The project is implemented in Ruby.
+<!-- PROJECT DESCRIPTION -->
 
-## Getting Started
+# 📖 School library <a name="about-project"></a>
 
-To get started with this project, follow these steps:
+**Ruby School libray Project** demonstrates the implementation of three classes in Ruby: `Person`, `Student`, and `Teacher`. These classes are designed to represent individuals in a school setting and provide various functionalities related to their attributes and permissions.
 
-1. Clone the repository to your local machine.
-2. Make sure you have Ruby installed on your system.
-3. Open the project in your preferred code editor.
+
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+> Describe the tech stack and include only the relevant sections that apply to your project.
+
+<details>
+  <summary>Ruby</summary>
+  <ul>
+    <li><a href="https://ruby.org/">Ruby</a></li>
+  </ul>
+</details>
+
+
+### Key Features <a name="key-features"></a>
+
+- **Has mltiple classes used to create objects and definitions to access and updtae the objects data**
+- **It uses inheritance; a design pattern that enables you to write a single piece of code that code be used by multiple classes without making duplicates of the same data in the code**
+- **It uses the ruby  attr_accessor function to access objects and update their values without havingto write mutiple lines of getters and setters for the class**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## Classes
 
@@ -56,17 +96,29 @@ The `Teacher` class provides the following additional functionality:
 - **Override can_use_services?**: This method overrides the parent class's `can_use_services?` method and always returns true, indicating that the teacher can use all services.
 
 
-## Future Features
 
-Here are some potential future features that can be added to enhance the functionality of the classes:
+## 💻 Getting Started <a name="getting-started"></a>
 
-- **Additional Attributes**: Expand the `Person` class with more attributes such as address, phone number, or email.
-- **Methods for Student**: Implement methods in the `Student` class for submitting assignments, tracking grades, or joining extracurricular activities.
-- **Methods for Teacher**: Add methods to the `Teacher` class for assigning grades, managing class schedules, or generating reports.
-- **Parent Class**: Introduce a parent class to handle common attributes and behaviors shared between students and teachers.
-- **Database Integration**: Develop database integration to store and retrieve student and teacher information.
-- **User Interface**: Create a user interface to interact with the classes, allowing users to input data and view results.
-- **Serialization**: Implement serialization capabilities to save and load instances of the classes.
+To get started with this project and have a local copy and running, follow these steps:
+
+### Prerequisites
+
+In order to run this project you need:
+  
+### Setup
+
+Clone this repository to your desired folder:
+Example commands:
+
+```sh
+  cd my-folder
+  git clone git@github.com:myaccount/my-project.git
+```
+
+### Install
+
+Install this project with:
+- **install Ruby on your computer**
 
 ## Author
 
@@ -76,6 +128,24 @@ This project was created by [Alexander Ssenyondo].
 - Instagram:[@Alexiscyber14](https://www.instagram.com/alexiscyber14/)
 - LinkedIn:[@Alex_Ssenyoondo](https://www.linkedin.com/in/alex-software/)
 - wellfound:[@alexiscyber14](https://angel.co/u/alexander-senyondo)
+
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+Here are some potential future features that can be added to enhance the functionality of the classes:
+
+- [] **Additional Attributes**: Expand the `Person` class with more attributes such as address, phone number, or email.
+- [] **Methods for Student**: Implement methods in the `Student` class for submitting assignments, tracking grades, or joining extracurricular activities.
+- [] **Methods for Teacher**: Add methods to the `Teacher` class for assigning grades, managing class schedules, or generating reports.
+- [] **Parent Class**: Introduce a parent class to handle common attributes and behaviors shared between students and teachers.
+- [] **Database Integration**: Develop database integration to store and retrieve student and teacher information.
+- [] **User Interface**: Create a user interface to interact with the classes, allowing users to input data and view results.
+- [] **Serialization**: Implement serialization capabilities to save and load instances of the classes.
+- [] **Additional Attributes**: Expand the `Person` class with more attributes such as address, phone number, or email.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## License
 
