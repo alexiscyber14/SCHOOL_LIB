@@ -1,4 +1,4 @@
-require "./nameable.rb"
+require './nameable'
 
 class Person < Nameable
   attr_accessor :id, :name, :age
@@ -6,7 +6,7 @@ class Person < Nameable
   def initialize(age, name = 'Unknown', parent_permission: true)
     @id = Random.rand(1...1000)
     @age = age
-    @name = name
+    super(name)
     @parent_permission = parent_permission
   end
 
@@ -23,5 +23,4 @@ class Person < Nameable
   def of_age?
     @age >= 18
   end
-
 end
