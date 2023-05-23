@@ -147,6 +147,16 @@ Here are some potential future features that can be added to enhance the functio
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project you can give it a ⭐️.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+I would like to thank <a href="https://www.microverse.org/">MICROVERSE</a> for their contribution to the material used in this project.
+
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
