@@ -1,7 +1,7 @@
 require './app'
 
 def main
-  puts "Welcome To School Library App!"
+  puts 'Welcome To School Library App!'
   puts "\n"
   app = App.new
   choices = {

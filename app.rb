@@ -24,18 +24,17 @@ class App
   def list_people
     puts 'List of People:'
     @people.each do |person|
-      if person.is_a?(Student)
-        status = 'Student'
-      elsif person.is_a?(Teacher)
-        status = 'Teacher'
-      else
-        status = 'Unknown'
-      end
+      status = if person.is_a?(Student)
+                 'Student'
+               elsif person.is_a?(Teacher)
+                 'Teacher'
+               else
+                 'Unknown'
+               end
       puts "[#{status}] Name: #{person.name.capitalize}, ID: #{person.id}, Age: #{person.age}"
     end
     puts "\n"
   end
-  
 
   def create_person
     print 'Do you want to create a student (1) Student, or a teacher (2)?  [input the number]: '
@@ -47,7 +46,7 @@ class App
       raise 'Please choose a valid option, number 1 or 2'
     end
   end
-  
+
   def create_student
     print 'Name: '
     name = gets.chomp
@@ -65,7 +64,7 @@ class App
     end
     puts "\n"
   end
-  
+
   def create_teacher
     print 'Age: '
     age = gets.chomp
@@ -77,21 +76,19 @@ class App
     @people << teacher
     puts 'Person created successfully'
     puts "\n"
-  end 
+  end
 
   def create_book
     print 'Title: '
     title = gets.chomp
     print 'Author: '
     author = gets.chomp
-  
+
     book = Book.new(title, author)
     books << book
-    puts "Book created succesfully."
+    puts 'Book created succesfully.'
     puts "\n"
   end
-
-  
 
   def create_rental
     puts 'Select a book from the following list by number:'
@@ -100,7 +97,7 @@ class App
     end
     book_choice = gets.chomp.to_i
     puts "\n"
-    if book_choice < 0 || book_choice > @books.length
+    if book_choice? || book_choice > @books.length
       puts 'Invalid book selection.'
       return
     end
@@ -110,19 +107,19 @@ class App
     puts 'Select a person from the following list by number (not id):'
 
     @people.each_with_index do |person, index|
-      if person.is_a?(Student)
-        status = 'Student'
-      elsif person.is_a?(Teacher)
-        status = 'Teacher'
-      else
-        status = 'Unknown'
-      end
+      status = if person.is_a?(Student)
+                 'Student'
+               elsif person.is_a?(Teacher)
+                 'Teacher'
+               else
+                 'Unknown'
+               end
       puts "#{index}) [#{status}] Name: #{person.name.capitalize}, ID: #{person.id}, Age: #{person.age}"
     end
 
     person_choice = gets.chomp.to_i
 
-    if person_choice < 0 || person_choice > @people.length
+    if person_choice? || person_choice > @people.length
       puts 'Invalid person selection.'
       puts "\n"
       return
@@ -132,7 +129,7 @@ class App
 
     print 'Date: '
     rental_date = gets.chomp
-   
+
 
     rental = Rental.new(rental_date, selected_person, selected_book)
     @rentals << rental
@@ -144,17 +141,17 @@ class App
   def list_rentals_for_person
     print 'ID of person: '
     person_id = gets.chomp.to_i
-    
-  
+
+
     person = @people.find { |p| p.id == person_id }
-  
+
     if person.nil?
       puts "Person with ID #{person_id} not found."
       puts "\n"
       return
     end
-  
-    puts "Rentals:"
+
+    puts 'Rentals:'
     rentals_for_person = @rentals.select { |rental| rental.person == person }
     rentals_for_person.each do |rental|
       puts "Date: #{rental.date},  Book \"#{rental.title}\"  by #{rental.author}"

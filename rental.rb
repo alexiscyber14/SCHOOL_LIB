@@ -20,4 +20,3 @@ class Rental
     @book.author
   end
 end
-
