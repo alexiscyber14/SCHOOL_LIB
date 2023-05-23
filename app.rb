@@ -129,8 +129,6 @@ class App
 
     print 'Date: '
     rental_date = gets.chomp
-
-
     rental = Rental.new(rental_date, selected_person, selected_book)
     @rentals << rental
 
@@ -141,10 +139,7 @@ class App
   def list_rentals_for_person
     print 'ID of person: '
     person_id = gets.chomp.to_i
-
-
     person = @people.find { |p| p.id == person_id }
-
     if person.nil?
       puts "Person with ID #{person_id} not found."
       puts "\n"
