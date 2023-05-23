@@ -35,7 +35,6 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
 
 <details>
   <summary>Ruby</summary>
@@ -101,11 +100,11 @@ The `Teacher` class provides the following additional functionality:
 
 To get started with this project and have a local copy and running, follow these steps:
 
-### Prerequisites
+### Prerequisites <a name="prerequisites">
 
 In order to run this project you need:
   
-### Setup
+### Setup <a name="setup">
 
 Clone this repository to your desired folder:
 Example commands:
@@ -115,12 +114,26 @@ Example commands:
   git clone git@github.com:myaccount/my-project.git
 ```
 
-### Install
+### Install <a name="install">
 
 Install this project with:
 - **install Ruby on your computer**
 
-## Author
+
+### Usage <a name="usage">
+- **To use this project content, you need to have ruby installed on you computer and must have prior knowledge in basic programming**
+
+
+### Run tests <a name="run-tests">
+Note:
+- **More information on how to run tests on the this project will be provided later in the week: thanks!!**
+
+
+### Deployment <a name="deployment">
+To make your project accessible to others:
+- **Create an account with github, create a public respository, and provide the link to the files and the project code base will be accessible to others**
+
+## Author <a name="authors">
 
 This project was created by [Alexander Ssenyondo].
 
@@ -129,6 +142,9 @@ This project was created by [Alexander Ssenyondo].
 - LinkedIn:[@Alex_Ssenyoondo](https://www.linkedin.com/in/alex-software/)
 - wellfound:[@alexiscyber14](https://angel.co/u/alexander-senyondo)
 
+
+##  Contrubuting <a name="contributing"></a>
+ The project is still in development but after its completed, future updates and contributions are welcome: Thank you!
 
 <!-- FUTURE FEATURES -->
 
@@ -158,5 +174,4 @@ I would like to thank <a href="https://www.microverse.org/">MICROVERSE</a> for t
 
 
 ## License
-
-This project is licensed under the [MIT License](LICENSE).
+<p>This project is <a href="/LICENSE.md">MIT</a> licensed</p>
