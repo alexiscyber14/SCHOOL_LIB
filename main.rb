@@ -8,7 +8,7 @@ def main
     3 => :create_person,
     4 => :create_book,
     5 => :create_rental,
-    6 => :list_rentals_by_person_id,
+    6 => :list_rentals_for_person,
     7 => :quit
   }
 
@@ -60,8 +60,8 @@ def create_rental(app)
   app.create_rental
 end
 
-def list_rentals_by_person_id(app)
-  app.list_rentals_by_person_id
+def list_rentals_for_person(app)
+  app.list_rentals_for_person
 end
 
 def quit(_app)
