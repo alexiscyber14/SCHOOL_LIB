@@ -55,13 +55,9 @@ class App
     print 'Has parent permission? [Y/N]: '
     parent_permission_input = gets.chomp
     parent_permission = parent_permission_input.upcase == 'Y'
-    if parent_permission
-      student = Student.new(name, age, parent_permission: parent_permission)
-      @people << student
-      puts 'Student created successfully'
-    else
-      puts 'Sorry, you need parent permission to create a student.'
-    end
+    student = Student.new(name, age, parent_permission: parent_permission)
+    @people << student
+    puts 'Student created successfully'
     puts "\n"
   end
 
@@ -97,7 +93,7 @@ class App
     end
     book_choice = gets.chomp.to_i
     puts "\n"
-    if book_choice? || book_choice > @books.length
+    if book_choice < 0 || book_choice > @books.length
       puts 'Invalid book selection.'
       return
     end
@@ -119,7 +115,7 @@ class App
 
     person_choice = gets.chomp.to_i
 
-    if person_choice? || person_choice > @people.length
+    if person_choice < 0 || person_choice > @people.length
       puts 'Invalid person selection.'
       puts "\n"
       return
