@@ -1,13 +1,8 @@
-require './person'
-require './classroom.rn'
+require_relative 'person'
 
 class Student < Person
-  def initialize(age, classroom, name = 'unknow', parent_permission: true)
-    super(age, name, parent_permission)
+  def initialize(name, age, classroom = nil, parent_permission: true)
+    super(name, age, parent_permission: parent_permission)
     @classroom = classroom
-  end
-
-  def plays_hhoky
-    '¯\\(ツ)/¯'
   end
 end
