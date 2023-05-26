@@ -1,4 +1,5 @@
 require './app'
+require 'pry'
 
 def main
   puts 'Welcome To School Library App!'
