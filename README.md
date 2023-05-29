@@ -133,14 +133,20 @@ Note:
 To make your project accessible to others:
 - **Create an account with github, create a public respository, and provide the link to the files and the project code base will be accessible to others**
 
-## Author <a name="authors">
+## Authors <a name="authors">
 
-This project was created by [Alexander Ssenyondo].
+👤 **Alexander Ssenyondo**
 
 - GitHub: [@alexiscyber14](https://github.com/alexiscyber14)
 - Instagram:[@Alexiscyber14](https://www.instagram.com/alexiscyber14/)
 - LinkedIn:[@Alex_Ssenyoondo](https://www.linkedin.com/in/alex-software/)
 - wellfound:[@alexiscyber14](https://angel.co/u/alexander-senyondo)
+
+👤 **Yidnekachew Kassahun**
+
+- GitHub: [@Yidnekachew-cmd](https://github.com/Yidnekachew-cmd)
+- Twitter: [@Yidnekassahun](https://twitter.com/Yidnekassahun)
+- LinkedIn: [@yidne kassahun](https://www.linkedin.com/in/yidnekachew-kassahun-2b817a24b/)
 
 
 ##  Contrubuting <a name="contributing"></a>
