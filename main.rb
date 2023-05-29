@@ -14,6 +14,7 @@ def main
     6 => :list_rentals_for_person,
     7 => :quit
   }
+
   loop do
     display_menu
     choice = gets.chomp.to_i

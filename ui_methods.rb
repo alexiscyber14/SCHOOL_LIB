@@ -1,4 +1,3 @@
-=begin
 def handle_choice(choice, app, choices)
   if choices.key?(choice)
     method_name = choices[choice]
@@ -7,7 +6,7 @@ def handle_choice(choice, app, choices)
     puts 'Invalid choice. Please try again.'
   end
 end
-=end
+
 def list_books(app)
   app.list_books
 end
