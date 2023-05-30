@@ -1,10 +1,7 @@
 require './app'
 require_relative './ui_methods'
-require_relative './modules/check_files_existence'
 
 def main
-  include Files
-  check_files_existence
   puts 'Welcome To School Library App!'
   puts "\n"
   app = App.new

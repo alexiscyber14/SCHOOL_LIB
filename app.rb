@@ -9,8 +9,10 @@ require_relative './modules/create_persons'
 require_relative './modules/list_rentals'
 require_relative './modules/create_rental'
 require_relative './modules/create_book'
+require_relative './modules/check_files_existence'
 
 class App
+  include Files
   include ListBooks
   include ListPeople
   include CreatePerson
@@ -20,6 +22,7 @@ class App
   attr_accessor :people, :books, :rentals
 
   def initialize
+    check_files_existence
     @people = []
     @books = []
     @rentals = []
