@@ -15,7 +15,7 @@ module CreateBook
     else
       existing_books = []
     end
-    data = existing_books + @books.map { |book| { title: book.title, author: book.author } }
+    data = existing_books + @books.map { |b| { title: b.title, author: b.author } }
     File.write('./data/books.json', JSON.generate(data))
     puts 'Book created successfully.'
     puts "\n"

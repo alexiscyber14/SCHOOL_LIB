@@ -21,10 +21,10 @@ module ListRentals
     else
       puts 'Rentals:'
       rentals_for_person.each do |rental|
-        puts "Date: #{rental['rental_date']}, Book \"#{rental['title']}\" by #{rental['author']}, Person ID: #{rental['person_id']}"
+        print "Date: #{rental['rental_date']},"
+        puts " Book \"#{rental['title'].capitalize}\" by #{rental['author'].capitalize},"
       end
+      puts "\n"
     end
-
-    puts "\n"
   end
 end

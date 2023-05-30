@@ -5,12 +5,20 @@ module CreatePerson
     person_input = gets.chomp.to_i
     case person_input
     when 1
-      create_person_common('student')
+      create_student
     when 2
-      create_person_common('teacher')
+      create_teacher
     else
       raise 'Please choose a valid option, number 1 or 2'
     end
+  end
+
+  def create_student
+    create_person_common('student')
+  end
+
+  def create_teacher
+    create_person_common('teacher')
   end
 
   def create_person_common(role)
@@ -29,7 +37,13 @@ module CreatePerson
       person = Teacher.new(name, age, specialization)
     end
     @people << person
-    # Save people to a JSON file
+    save_people_to_json
+
+    puts "#{role.capitalize} created successfully"
+    puts "\n"
+  end
+
+  def save_people_to_json
     data = @people.map do |p|
       if p.is_a?(Student)
         {
@@ -49,14 +63,14 @@ module CreatePerson
         }
       end
     end
+
     begin
       existing_people = JSON.parse(File.read('./data/people.json'))
     rescue JSON::ParserError, EOFError
       existing_people = []
     end
+
     data += existing_people if existing_people.is_a?(Array)
     File.write('./data/people.json', JSON.generate(data))
-    puts "#{role.capitalize} created successfully"
-    puts "\n"
   end
 end
