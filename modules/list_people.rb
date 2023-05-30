@@ -12,10 +12,8 @@ module ListPeople
         puts "[#{role}] Name: #{name}, ID: #{id}, Age: #{age}"
       end
     else
-      puts 'Error: File does not exist.'
-      print 'Enter "1" to exit the program: '
-      input = gets.chomp
-      exit if input == '1'
+      puts 'Somthing went wrong.'
+      return
     end
     puts "\n"
   end

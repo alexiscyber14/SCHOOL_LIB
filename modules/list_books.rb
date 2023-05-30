@@ -3,7 +3,6 @@ require 'json'
 module ListBooks
   def list_books
     puts 'List of Books:'
-
     if File.exist?('./data/books.json')
       file = File.read('./data/books.json')
       books = JSON.parse(file)
